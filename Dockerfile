@@ -25,6 +25,7 @@ RUN set -x && \
 WORKDIR $ACTIVEMQ_HOME
 
 EXPOSE 61616
+EXPOSE 61613
 EXPOSE 8161
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
