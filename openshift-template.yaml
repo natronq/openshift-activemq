@@ -41,6 +41,8 @@ objects:
           ports:
           - containerPort: 61616
             protocol: TCP
+          - containerPort: 61613
+            protocol: TCP
           - containerPort: 8161
             protocol: TCP
           resources: {}
@@ -120,6 +122,10 @@ objects:
       port: 61616
       protocol: TCP
       targetPort: 61616
+    - name: 61613-tcp
+      port: 61613
+      protocol: TCP
+      targetPort: 61613
     selector:
       app: openshift-activemq
       deploymentconfig: openshift-activemq
